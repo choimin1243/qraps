@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload and Text Data</title>
+</head>
+<body>
+    <h1>Q_RAPS_부품서식만들기 사이트</h1>
+    <form action="/upload/" method="post" enctype="multipart/form-data">
+        <label for="file">Excel 파일 업로드:</label>
+        <input type="file" id="file" name="file" accept=".xlsx">
+        <br>
+        <label for="text_data">찾는 문자 입력(예시: R,C등)</label>
+        <input type="text" id="text_data" name="text_data">
+        <br>
+        <br>
+        <label for="additional_text">찾는문자열 위치값(예:Location No.)</label>
+        <input type="text" id="additional_text" name="additional_text">
+        <br>
+
+        <button type="submit">업로드</button>
+    </form>
+</body>
+</html>
